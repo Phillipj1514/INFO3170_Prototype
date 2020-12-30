@@ -68,7 +68,7 @@ function loadAddRoom(){
         </div>
 
         <div class="form_field f_btn">
-            <p id="form_btn">Add Appliance</p>
+            <p id="form_btn">Add Room</p>
         </div>
 
     </section>
