@@ -1,0 +1,470 @@
+body{
+    line-height: 1.1;
+}
+#screen{
+    width: 360px;
+    height: 640px;
+    margin: 2rem;
+    border: gray solid 1px;
+}
+#navbar{
+    width: 100%;
+    height: 40px;
+    display:flex;
+    flex-flow: row;
+    background-color: #112644;
+    color: white;
+}
+
+#main{
+    width: 100%;
+    height: 520px; 
+    position: relative;
+    background-color: rgb(248, 247, 247);
+}
+
+#bottom_nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row;
+    background-color: #112644;
+    color: white;
+}
+
+#navbar div{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#navbar div #back{
+    height: 30px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+#navbar #content{
+    margin-left: auto;
+    padding-right: 5px;
+    width: 200px;
+}
+.bnav{
+    width: 120px;
+    height: 100%;
+    text-align: center;
+}
+
+.bnav img{
+    width: auto;
+    height:50px;
+    padding: 5px;
+}
+
+#menu{
+    height: 100%;
+    width: auto;
+    padding: 7px;
+    float: right;
+    filter: brightness(0) invert(1);
+}
+
+.gone{
+    display:none;
+}
+
+/* 
+============================
+        Dashboard
+============================
+ */
+#graph-select{
+    display: flex;
+    flex-flow: row;
+    justify-content: right;
+}
+
+#graph-select p{
+    margin: 0 4px;
+}
+
+#graph{
+    padding: 10px;
+}
+
+#graph img{
+    width: 100%;
+    height: auto;
+}
+
+#ebill{
+    height: 55px;
+    border-radius: 2px;
+    margin:01px 10px;
+    background-color: rgba(33, 47, 66, 0.2);
+    text-align: center;
+}
+
+#e-use{
+    border-radius: 2px;
+    margin: 0px 10px;
+    text-align: center;
+    background-color:rgba(17, 68, 44, 0.3);
+}
+
+#e-use #e-use-in{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#e-use #e-use-in div{
+    margin: 2px  5px;
+}
+
+#most-e{
+border-radius: 2px;
+margin: 0px 10px;
+text-align: center;
+background-color:rgba(182, 132, 0, 0.5);;
+}
+
+.most-e-in{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.most-e-in div{
+    margin: 5px;
+}
+
+.dash-border{
+    height: 2px;
+    margin: 5px 6px;
+    background-color:rgba(182, 132, 0, 0.25);
+}
+
+.room_top.bold{
+    margin-left: 10px;
+}
+
+#view_room_btn{
+    background-color: #B68400;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 0px 5px;
+    color: wheat;
+}
+
+.room_det{height: 60px;}
+
+/* 
+============================
+        Rooms
+============================
+*/
+#rooms_list{
+    width: 100%;
+    height: 482px;
+    overflow: auto;
+}
+#add_btn{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+#add_btn img{
+    width: 100%;
+    height: auto;
+}
+
+#rooms_est_bill{
+    width: 100%;
+    height: 39px;
+    background-color: #B68400;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+
+#rooms_est_bill p{
+    font-weight: bold;
+    color: white; 
+    float: left;  
+    padding: 10px;
+    
+}
+
+#est_bill_amt{
+    float: right !important;
+}
+.room_summary{
+    background-color: white;
+    margin: 5px 0px;
+}
+.room_summary:hover{
+    background-color: aquamarine;
+}
+
+.room_summary div{
+    display: inline-block;
+    width: 100%;
+    padding: 4px;
+}
+
+.left{ float: left;}
+
+.right{float: right;}
+
+/* 
+============================
+        Room
+============================
+*/
+
+#form{
+    text-align: center;
+    padding: 20px;
+}
+
+#form_title{
+    margin: 10px;
+}
+
+.form_field{
+    display: flex;
+    flex-flow: row;
+    justify-content:left;
+    width: 100%;
+    height: 35px;
+    margin: 40px 5px;
+}
+
+.form_input{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+
+.form_label{
+    margin: 0px 10px;
+    padding: 5px;
+    background-color: #112644;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.f_btn{
+    justify-content: center !important;
+}
+
+#form_btn{
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #112644;
+    color: white;
+    border-radius: 4px;
+    text-align: center;  
+}
+#form_btn:hover{
+    background-color: #20406e;
+}
+
+#r_head{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.r_head_row{
+    width: 100%;
+    height: 20px;
+    padding: 1px 20px;
+    display: inline-block;
+}
+
+#r_head_separator{
+    height: 1px;
+    background-color: grey;
+    margin: 10px 10px;
+}
+
+#appliance_list{
+    height: 415px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.ap_summary{
+    background-color: rgba(17, 38, 68, 0.8);
+    flex: 0 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.ap_summary:hover{
+    background-color: rgba(26, 59, 105, 0.8);
+
+}
+
+/* 
+============================
+        Appliances
+============================
+*/
+
+#display_view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#view_title{
+    margin: 10px;
+}
+
+.view_rows{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.view_row{
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+}
+
+#overlay{
+    /* filter: blur(8px); */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    opacity: 47%;
+}
+
+#overlay_menu{
+    position: absolute;
+    background-color: white;
+    left: 30%;
+    top: 35%;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+#overlay_menu p{
+    margin: 4px 0px;
+}
+
+#overlay_menu p:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+/* 
+============================
+        Settings
+============================
+*/
+
+.highlight{
+    width: 100%;
+}
+
+.highlight:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgba(182, 132, 0, 0.8);;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgba(182, 132, 0, 0.8);;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* 
+============================
+        Quick Predict
+============================
+*/
+
+.qp_btn{
+    background-color: #B68400 !important;
+}
+
+.qp_btn:hover{
+    background-color: #aa7d02 !important;
+}
+
+.bold{font-weight: bold;}
