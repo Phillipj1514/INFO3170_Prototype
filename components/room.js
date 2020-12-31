@@ -111,7 +111,7 @@ function showRoom(index){
             <div>
                 <div class="r_head_row">
                     <p class="left">Total Power Consumption</p>
-                    <p class="right" id="r_head_pc">20 Watts</p>
+                    <p class="right" id="r_head_pc">20 KWH</p>
                 </div>
                 <div class="r_head_row">
                     <p class="left">Total Cost</p>
