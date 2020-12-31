@@ -78,7 +78,7 @@ function loadDashboard(){
                 </div>
                 <div>
                     <h6>Cost</h6>
-                    <p>$`+(me_cost)+`</p>
+                    <p>$`+Math.round(me_cost)+`</p>
                 </div>
                 <div>
                     <h6>Number of appliances</h6>
