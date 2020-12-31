@@ -33,7 +33,7 @@ function loadDashboard(){
         me_power += (mer.appliances[i].consumption * mer.appliances[i].hours);
     }
     me_power*=30;
-    me_power/=1000;
+    me_power/=500;
     me_cost = me_power/power_rate;
 
     dashboard_view = `

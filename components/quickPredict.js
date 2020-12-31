@@ -83,7 +83,7 @@ function showPredict(){
 
     let Monthly_use = (consumption*hours);
     Monthly_use *= 30;
-    Monthly_use /=  1000;
+    Monthly_use /=  500;
     let monthly_cost = Monthly_use/power_rate;
     let new_bill = total_power_cost + monthly_cost;
 

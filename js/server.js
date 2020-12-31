@@ -63,7 +63,7 @@ function generateDetail(){
             totalAppliance++;
         }
         roomspower*=30;
-        roomspower/=1000;
+        roomspower/=500;
         if(roomspower >= highest_power){
             highest_power = roomspower;
             MostExpensiveROomIndex = i;
@@ -76,7 +76,7 @@ function generateDetail(){
 
 // dummy data
 addRoom(new Room("Kitchen"));
-rooms[0].addAppliance(new Appliance("Stove", 8000, 4));
+rooms[0].addAppliance(new Appliance("Electric Stove", 8000, 4));
 rooms[0].addAppliance(new Appliance("Fridge", 7000, 24));
 rooms[0].addAppliance(new Appliance("Bulb", 100, 12));
 rooms[0].addAppliance(new Appliance("Microwave", 400, 1));
