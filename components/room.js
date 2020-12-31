@@ -111,7 +111,7 @@ function showRoom(index){
             <div>
                 <div class="r_head_row">
                     <p class="left">Total Power Consumption</p>
-                    <p class="right" id="r_head_pc">20kwh</p>
+                    <p class="right" id="r_head_pc">20 Watts</p>
                 </div>
                 <div class="r_head_row">
                     <p class="left">Total Cost</p>
@@ -137,7 +137,7 @@ function showRoom(index){
             <h6> `+name+`</h6>
             <div>
                 <p>Consumption</p>
-                <p class="right" >`+consump+`KWH</p>
+                <p class="right" >`+consump+`Watts</p>
             </div>
             <div>
                 <p >Avg. Time On</p>
@@ -151,7 +151,7 @@ function showRoom(index){
     }
     tot_cost = (tot_power*30)/power_rate;
     $("#appliance_list").html(appliance_list);
-    $("#r_head_pc").html(tot_power+" KWH");
+    $("#r_head_pc").html(tot_power+" Watts");
     $("#r_head_cost").html("$"+tot_cost);
 
     for(let k=0; k<appliance_ids.length ; k++) {

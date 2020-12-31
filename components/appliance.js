@@ -72,7 +72,7 @@ function loadAddAppliance(){
         <div class="form_field">
             <input type="text" id="a_consumption_field"  placeholder="Enter device consumption" name="Consumption" class="form_input"><br>
             <div class="form_label">
-                <p>KWH</p>
+                <p>Watts</p>
             </div>
         </div>
 
@@ -124,12 +124,12 @@ function showAppliance(index){
         <div class="view_rows">
             <div class="view_row">
                 <p class="left">Total Power Consumption</p>
-                <p class="right" id="ap_tot_consump">`+tot_power+` KWH</p>
+                <p class="right" id="ap_tot_consump">`+tot_power+` Watts</p>
             </div>
 
             <div class="view_row">
                 <p class="left">Consumption</p>
-                <p class="right" id="ap_consump">`+consump+` KWH</p>
+                <p class="right" id="ap_consump">`+consump+` Watts</p>
             </div>
 
             <div class="view_row">

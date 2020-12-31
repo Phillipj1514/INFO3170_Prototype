@@ -1,7 +1,7 @@
 //  main variables
 let rooms = [];
 
-let power_rate  = 10;
+let power_rate  = 22.75;
 
 let total_power_cost = 0;
 
@@ -62,7 +62,8 @@ function generateDetail(){
             roomspower += (rooms[i].appliances[j].consumption * rooms[i].appliances[j].hours);
             totalAppliance++;
         }
-        roomspower*=30
+        roomspower*=30;
+        roomspower/=1000;
         if(roomspower >= highest_power){
             highest_power = roomspower;
             MostExpensiveROomIndex = i;

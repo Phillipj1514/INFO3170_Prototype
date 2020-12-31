@@ -26,7 +26,7 @@ function loadQuickPredict(){
         <div class="form_field">
             <input type="text" id="qp_consumption_field"  placeholder="Enter device consumption" name="Consumption" class="form_input"><br>
             <div class="form_label">
-                <p>KWH</p>
+                <p>Watts</p>
             </div>
         </div>
 
@@ -92,7 +92,7 @@ function showPredict(){
         <div class="view_rows">
             <div class="view_row">
                 <p class="left">Monthly Usage</p>
-                <p class="right">`+Monthly_use+` KWH</p>
+                <p class="right">`+Monthly_use+` Watts</p>
             </div>
 
             <div class="view_row">
