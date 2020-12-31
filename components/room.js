@@ -154,7 +154,7 @@ function showRoom(index){
     tot_power/=500; 
     tot_cost = tot_power/power_rate;
     $("#appliance_list").html(appliance_list);
-    $("#r_head_pc").html( Math.round(tot_power)+" Watts");
+    $("#r_head_pc").html( Math.round(tot_power)+" KWH");
     $("#r_head_cost").html("$"+ Math.round(tot_cost));
 
     for(let k=0; k<appliance_ids.length ; k++) {
