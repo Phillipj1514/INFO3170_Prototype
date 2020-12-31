@@ -33,7 +33,7 @@ function loadQuickPredict(){
         <div class="form_field">
             <input type="text" id="qp_time_field"  placeholder="Enter daily hours used" name="Time" class="form_input"><br>
             <div class="form_label">
-                <p>Hours</p>
+                <p>Hours/Day</p>
             </div>
         </div>
         <div class="form_field f_btn">

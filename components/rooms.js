@@ -4,7 +4,7 @@ let rooms_view = `
         
     </div>
     <div id="rooms_est_bill">
-        <p>Estimatted Bill</p>
+        <p>Estimated Bill</p>
         <p id="est_bill_amt">$1000</p>
     </div>
     <div id="add_btn">
@@ -92,7 +92,7 @@ function displayRooms(){
         let cost = 0
         for(let j=0; j<rooms[i].appliances.length ; j++) {
             if(j <= 2){
-                appliances+= ", "+rooms[i].appliances[j].name;
+                appliances+= rooms[i].appliances[j].name + ", ";
             }
             
             cost += (rooms[i].appliances[j].consumption * rooms[i].appliances[j].hours);
