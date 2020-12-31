@@ -55,10 +55,12 @@ function roomIndex(room){
 function generateDetail(){
     highest_power = 0;
     total_power_use = 0;
+    totalAppliance = 0;
     for(let i=0; i<rooms.length; i++) {
         roomspower = 0;
         for(let j=0; j<rooms[i].appliances.length; j++) {
             roomspower += (rooms[i].appliances[j].consumption * rooms[i].appliances[j].hours);
+            totalAppliance++;
         }
         roomspower*=30
         if(roomspower >= highest_power){

@@ -26,7 +26,7 @@ function loadSettings(){
                 </div>
 
                 <div class="view_row">
-                    <p class="left highlight bold">Preferemces</p>
+                    <p class="left highlight bold">Preferences</p>
                 </div>
 
                 <div class="dash-border"></div>

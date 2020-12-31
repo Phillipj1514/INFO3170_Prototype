@@ -68,7 +68,7 @@ function loadAddRoom(){
         </div>
 
         <div class="form_field f_btn">
-            <p id="form_btn">Add Room</p>
+            <p id="form_btn">Save and Add Appliance</p>
         </div>
 
     </section>
@@ -78,8 +78,10 @@ function loadAddRoom(){
 
     $("#form_btn").click(function(){
         let name = $("#r_name_field").val();
-        addRoom(new Room(name));
-        prev_view();
+        let n_room = new Room(name);
+        addRoom(n_room);
+        cur_room_index = roomIndex(n_room);
+        loadAddAppliance();
     });
 }
 
