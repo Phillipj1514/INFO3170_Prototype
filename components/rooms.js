@@ -99,8 +99,8 @@ function displayRooms(){
         }
         cost*= 30;
         cost/= 1000;
-        cost = cost /power_rate;
-        total += cost
+        cost =  cost /power_rate;
+        total +=  cost
         
 
         rooms_summary += `
@@ -111,7 +111,7 @@ function displayRooms(){
             </div>
             <div>
                 <p class="left">`+appliances+`</p>
-                <p class="right">$`+cost+`</p>
+                <p class="right">$`+ Math.round(cost)+`</p>
             </div>
         </div>
         `;
@@ -121,7 +121,7 @@ function displayRooms(){
      total_power_cost = total;
 
      $("#rooms_list").html(rooms_summary);
-     $("#est_bill_amt").html("$"+total_power_cost);
+     $("#est_bill_amt").html("$"+ Math.round(total_power_cost));
 
      for(let k=0; k<buttons_ids.length ; k++) {
         $(buttons_ids[k]).click(function(){

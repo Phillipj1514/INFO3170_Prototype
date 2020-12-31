@@ -126,7 +126,7 @@ function showAppliance(index){
         <div class="view_rows">
             <div class="view_row">
                 <p class="left">Total Power Consumption</p>
-                <p class="right" id="ap_tot_consump">`+tot_power+` Watts</p>
+                <p class="right" id="ap_tot_consump">`+ Math.round(tot_power)+` Watts</p>
             </div>
 
             <div class="view_row">
@@ -136,7 +136,7 @@ function showAppliance(index){
 
             <div class="view_row">
                 <p class="left">Total Cost</p>
-                <p class="right" id="ap_cost">$`+tot_cost+`</p>
+                <p class="right" id="ap_cost">$`+ Math.round(tot_cost)+`</p>
             </div>
 
             <div class="view_row">

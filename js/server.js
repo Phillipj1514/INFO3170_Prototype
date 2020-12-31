@@ -70,17 +70,17 @@ function generateDetail(){
         }
         total_power_use+= roomspower
     }
-    averageDeviceUse = Math.round(total_power_use/totalAppliance);
-    total_power_cost = total_power_use/power_rate;
+    averageDeviceUse = total_power_use/totalAppliance;
+    total_power_cost =  total_power_use/power_rate;
 }
 
 // dummy data
 addRoom(new Room("Kitchen"));
-rooms[0].addAppliance(new Appliance("Stove", 10, 10))
-rooms[0].addAppliance(new Appliance("Fridge", 12, 10))
-rooms[0].addAppliance(new Appliance("Bulb", 2, 20))
-rooms[0].addAppliance(new Appliance("Mirror", 16, 23))
+rooms[0].addAppliance(new Appliance("Stove", 800, 4));
+rooms[0].addAppliance(new Appliance("Fridge", 700, 24));
+rooms[0].addAppliance(new Appliance("Bulb", 100, 12));
+rooms[0].addAppliance(new Appliance("Microwave", 400, 1));
 
 addRoom(new Room("Bathroom"));
-rooms[1].addAppliance(new Appliance("Bulb", 2, 20))
-rooms[1].addAppliance(new Appliance("Mirror", 16, 23))
+rooms[1].addAppliance(new Appliance("Bulb", 100, 12));
+rooms[1].addAppliance(new Appliance("Mirror", 200, 2));

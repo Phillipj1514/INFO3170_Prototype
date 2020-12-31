@@ -137,7 +137,7 @@ function showRoom(index){
             <h6> `+name+`</h6>
             <div>
                 <p>Consumption</p>
-                <p class="right" >`+consump+`Watts</p>
+                <p class="right" >`+ consump+`Watts</p>
             </div>
             <div>
                 <p >Avg. Time On</p>
@@ -154,8 +154,8 @@ function showRoom(index){
     tot_power/=1000; 
     tot_cost = tot_power/power_rate;
     $("#appliance_list").html(appliance_list);
-    $("#r_head_pc").html(tot_power+" Watts");
-    $("#r_head_cost").html("$"+tot_cost);
+    $("#r_head_pc").html( Math.round(tot_power)+" Watts");
+    $("#r_head_cost").html("$"+ Math.round(tot_cost));
 
     for(let k=0; k<appliance_ids.length ; k++) {
         $(appliance_ids[k]).click(function(){

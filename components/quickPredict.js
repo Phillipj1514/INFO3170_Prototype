@@ -97,12 +97,12 @@ function showPredict(){
 
             <div class="view_row">
                 <p class="left">Monthly Cost</p>
-                <p class="right" >$`+monthly_cost+`</p>
+                <p class="right" >$`+ Math.round(monthly_cost)+`</p>
             </div>
 
             <div class="view_row">
                 <p class="left">New Bill Estimate</p>
-                <p class="right" >$`+new_bill+`</p>
+                <p class="right" >$`+ Math.round(new_bill)+`</p>
             </div>
 
             <div class="form_field f_btn">
