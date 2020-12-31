@@ -76,11 +76,11 @@ function generateDetail(){
 
 // dummy data
 addRoom(new Room("Kitchen"));
-rooms[0].addAppliance(new Appliance("stove", 10, 10))
-rooms[0].addAppliance(new Appliance("fridge", 12, 10))
-rooms[0].addAppliance(new Appliance("bulb", 2, 20))
-rooms[0].addAppliance(new Appliance("mirror", 16, 23))
+rooms[0].addAppliance(new Appliance("Stove", 10, 10))
+rooms[0].addAppliance(new Appliance("Fridge", 12, 10))
+rooms[0].addAppliance(new Appliance("Bulb", 2, 20))
+rooms[0].addAppliance(new Appliance("Mirror", 16, 23))
 
 addRoom(new Room("Bathroom"));
-rooms[1].addAppliance(new Appliance("bulb", 2, 20))
-rooms[1].addAppliance(new Appliance("mirror", 16, 23))
+rooms[1].addAppliance(new Appliance("Bulb", 2, 20))
+rooms[1].addAppliance(new Appliance("Mirror", 16, 23))

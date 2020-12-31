@@ -53,11 +53,11 @@ function loadDashboard(){
             <div id="e-use-in">
                 <div>
                     <h6>Average per device</h6>
-                    <p>`+averageDeviceUse+` Watts</p>
+                    <p>`+averageDeviceUse+` KWH</p>
                 </div>
                 <div>
                     <h6>Total Power Forcast</h6>
-                    <p>`+total_power_use+` Watts</p>
+                    <p>`+total_power_use+` KWH</p>
                 </div>
             </div>
 
@@ -74,7 +74,7 @@ function loadDashboard(){
             <div class="most-e-in room_det">
                 <div>
                     <h6>Power Usage</h6>
-                    <p>`+me_power+` Watts</p>
+                    <p>`+me_power+` KWH</p>
                 </div>
                 <div>
                     <h6>Cost</h6>

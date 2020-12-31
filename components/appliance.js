@@ -107,7 +107,9 @@ function showAppliance(index){
     let name = cur_appliance.name;
     let consump = cur_appliance.consumption;
     let hours = cur_appliance.hours;
-    let tot_power = (consump*hours)*30;
+    let tot_power = (consump*hours);
+    tot_power *= 30;
+    tot_power /= 1000;
     let tot_cost = tot_power/power_rate;
 
     appliance_view = `
