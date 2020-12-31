@@ -81,7 +81,9 @@ function showPredict(){
     let consumption = $("#qp_consumption_field").val();
     let hours = $("#qp_time_field").val();
 
-    let Monthly_use = (consumption*hours)*30;
+    let Monthly_use = (consumption*hours);
+    Monthly_use *= 30;
+    Monthly_use *=  1000;
     let monthly_cost = Monthly_use/power_rate;
     let new_bill = total_power_cost + monthly_cost;
 

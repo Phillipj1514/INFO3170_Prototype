@@ -63,7 +63,7 @@ function generateDetail(){
             totalAppliance++;
         }
         roomspower*=30;
-        roomspower/=1000;
+        roomspower*=1000;
         if(roomspower >= highest_power){
             highest_power = roomspower;
             MostExpensiveROomIndex = i;
