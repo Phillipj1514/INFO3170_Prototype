@@ -94,7 +94,7 @@ function showPredict(){
         <div class="view_rows">
             <div class="view_row">
                 <p class="left">Monthly Usage</p>
-                <p class="right">`+Monthly_use+` Watts</p>
+                <p class="right">`+Monthly_use+` KWH</p>
             </div>
 
             <div class="view_row">
