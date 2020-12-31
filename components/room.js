@@ -151,7 +151,7 @@ function showRoom(index){
     }
 
     tot_power *= 30;
-    tot_power*=1000; 
+    tot_power/=1000; 
     tot_cost = tot_power/power_rate;
     $("#appliance_list").html(appliance_list);
     $("#r_head_pc").html( Math.round(tot_power)+" Watts");

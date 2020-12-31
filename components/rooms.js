@@ -98,7 +98,7 @@ function displayRooms(){
             cost += (rooms[i].appliances[j].consumption * rooms[i].appliances[j].hours);
         }
         cost*= 30;
-        cost*= 1000;
+        cost/= 1000;
         cost =  cost /power_rate;
         total +=  cost
         
