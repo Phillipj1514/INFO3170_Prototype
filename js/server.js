@@ -71,7 +71,7 @@ function generateDetail(){
         total_power_use+= roomspower
     }
     averageDeviceUse = total_power_use/totalAppliance;
-    total_power_cost =  total_power_use/power_rate;
+    total_power_cost =  (total_power_use/power_rate) + 445.39 + ((total_power_use/power_rate)*0.107);
 }
 
 // dummy data

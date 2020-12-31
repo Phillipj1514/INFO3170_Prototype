@@ -84,7 +84,7 @@ function showPredict(){
     let Monthly_use = (consumption*hours);
     Monthly_use *= 30;
     Monthly_use /=  500;
-    let monthly_cost = Monthly_use/power_rate;
+    let monthly_cost = (Monthly_use/power_rate) + (445.39/ totalAppliance+1) + ((Monthly_use/power_rate)*0.107);
     let new_bill = total_power_cost + monthly_cost;
 
     quickpredict_view = `

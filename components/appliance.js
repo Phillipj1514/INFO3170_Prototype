@@ -110,7 +110,7 @@ function showAppliance(index){
     let tot_power = (consump*hours);
     tot_power *= 30;
     tot_power /= 500;
-    let tot_cost = tot_power/power_rate;
+    let tot_cost = (tot_power/power_rate)+ (445.39/ totalAppliance) + ((tot_power/power_rate)*0.107);
 
     appliance_view = `
     <section id="display_view">

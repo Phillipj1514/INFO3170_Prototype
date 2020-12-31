@@ -99,7 +99,7 @@ function displayRooms(){
         }
         cost*= 30;
         cost/= 500;
-        cost =  cost /power_rate;
+        cost =  (cost /power_rate)+ (445.39/ totalAppliance) + ((cost/power_rate)*0.107);
         total +=  cost
         
 

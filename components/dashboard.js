@@ -34,7 +34,7 @@ function loadDashboard(){
     }
     me_power*=30;
     me_power/=500;
-    me_cost = me_power/power_rate;
+    me_cost = (me_power/power_rate) + (445.39/ totalAppliance) + ((me_power/power_rate)*0.107);
 
     dashboard_view = `
         <section>
